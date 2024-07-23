@@ -1,0 +1,21 @@
+{
+  "name": "cp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-type": "npx tsc -w",
+    "start-server": "nodemon index.js",
+    "start": "concurrently \"npm run start-type\" \"npm run start-server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
