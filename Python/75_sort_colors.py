@@ -1,7 +1,7 @@
 def partition(arr, l, r):
     pivot = arr[r]
     i = l-1
-    for j in range(l, r):
+    for j in range(l,r):
         if arr[j] <= pivot:
             i += 1
             arr[i], arr[j] = arr[j], arr[i]
@@ -10,9 +10,9 @@ def partition(arr, l, r):
 
 def quick_sort(arr, l, r):
     if l < r:
-        pi = partition(arr, l, r)
+        pi = partition(arr, l ,r)
         quick_sort(arr, l, pi-1)
-        quick_sort(arr,pi+1,r)
+        quick_sort(arr, pi+1, r)
 
 class Solution:
     def sortColors(self, nums: list[int]) -> None:
