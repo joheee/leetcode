@@ -32,5 +32,4 @@ class Solution:
                     print(grid[i][j], (i, j), neighbor, edge)
                     grid[i][j] = 2
                     res += edge
-
         return res
